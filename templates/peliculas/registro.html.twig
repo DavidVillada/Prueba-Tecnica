@@ -1,0 +1,43 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Registro de Peliculas{% endblock %}
+
+{% block body %}
+
+<div class="example-wrapper">
+    <h1>Registro</h1>
+    {{form_start(form)}}
+    {{form_widget(form)}}
+    {{form_end(form)}}
+</div>
+<div id = "container">
+    <h1 id="peli">Peliculas</h1>
+    <table id="tabla">
+        <tr>
+            <th>Nombre</th>
+            <th>Sinopsis</th>
+            <th>Precio Unitario</th>
+            <th>Genero</th>
+            <th>Fecha Estreno</th>
+            <th>Acciones</th>
+
+        </tr>
+
+        {% for pelicula in peliculas %}
+            <tr>
+                <td>{{ pelicula.nombre}}</td>
+                <td>{{ pelicula.sinopsis}}</td>
+                <td>{{ pelicula.precioUnitario}}</td>
+                <td>{{ pelicula.genero}}</td>
+                <td>24/05/2010</td>
+                <td class"buttons">
+                    <a href="{{ path('pelicula_edit', {'id':pelicula.id}) }}">Editar</a>
+                    <a href="{{ path('pelicula_delete', {'id':pelicula.id}) }}">Eliminar</a>
+                </td>
+            </tr>
+        {% endfor %}
+
+        
+    </table>
+</div>
+{% endblock %}

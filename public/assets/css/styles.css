@@ -1,0 +1,100 @@
+body{
+    background: url(../img/cine.jpg);
+}
+.example-wrapper {
+    margin: 1em auto;
+    max-width: 800px;
+    width: 95%;
+    font: 18px/1.5 sans-serif;
+}
+
+.example-wrapper code {
+    background: #F5F5F5;
+    padding: 2px 6px;
+}
+
+label {
+    display: block;
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="date"] {
+    width: 48%;
+    padding: 8px;
+    border-radius: 10px;
+    border-color: antiquewhite;
+}
+
+button,
+input[type="submit"] {
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border-color: #AAAAAA;
+    background-color: #B58A6C;
+    cursor: pointer;
+    color: white;
+    transition: all 300ms;
+    margin-left: 200px;
+    width: 150px;
+}
+
+button:hover,
+input[type="submit"] :hover{
+    background-color: #8C6348;
+}
+
+#header{
+    margin: 1em auto;
+    max-width: 50%;
+    width: 100%;
+    font: 32px/1.5 sans-serif;
+    margin-right: 5%;
+    margin-top: 8px;
+    color: bisque;
+    transition: all 300ms;
+    
+}
+
+#header:hover{
+    color: darksalmon;
+}
+
+table th{
+    margin-right: 15px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-bottom: 1px solid #eee;
+    background-color: #eee;
+    border-radius: 5px;
+    
+}
+
+#peli{
+    margin: 1em auto;
+    max-width: 50%;
+    width: 150%;
+    font: 40px/1.5 sans-serif;
+    margin-right: 5%;
+    
+}
+
+#tabla{
+    margin: 1em auto;
+    max-width: 60%;
+    width: 100%;
+    margin-right: 10%;
+}
+
+#container{
+   width: 60%;
+   margin: 0px auto;
+   background-color: #fff;
+   box-shadow: 0px 0px 8px gray;
+   
+   border-radius: 10px;
+}

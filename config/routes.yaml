@@ -1,0 +1,19 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+    
+register:
+    path: /registro
+    controller: App\Controller\PeliculasController::registro
+
+alquiler:
+    path: /alquiler
+    controller: App\Controller\AlquilerController::index
+
+pelicula_edit:
+    path: /peliculaedit/{id}
+    controller: App\Controller\PeliculasController::edit
+
+pelicula_delete:
+    path: /peliculadelete/{id}
+    controller: App\Controller\PeliculasController::delete    
